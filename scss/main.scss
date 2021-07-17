@@ -1,0 +1,384 @@
+@import "variables";
+
+// Reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $colorThree;
+}
+
+// El HEADER y el FOOTER tienen los mismos estilos para las 5 páginas .HTML
+
+// Header
+
+.menuBeerco {
+  color: $colorOne;
+}
+
+// Footer
+
+.indexFooter {
+  background-color: $colorTwo;
+  color: $colorThree;
+  padding: 1rem;
+  div {
+    @include display(flex, column, space-between, center);
+    h5 {
+      font-family: "Dela Gothic One", cursive;
+    }
+  }
+  a {
+    color: $colorThree;
+    font-style: italic;
+  }
+  a:hover {
+    color: $colorOne;
+    font-style: italic;
+  }
+}
+
+// index.html
+
+#indexNav {
+  background-color: $colorTwo;
+  a {
+    color: $colorOne;
+  }
+  a:hover {
+    color: $colorThree;
+  }
+}
+
+#indexMainSection02 {
+  background-color: $colorTwo;
+  color: $colorOne;
+  width: 50vw;
+  margin: $mAuto;
+  padding: 1rem;
+  text-align: center;
+  h1 {
+    color: $colorThree;
+    font-family: "Dela Gothic One", cursive;
+  }
+
+  // MEDIA QUERYS
+
+  @include media-mxw576(sm) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include media-mxw576(md) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include media-mxw576(lg) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include media-mxw576(xl) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+// UN EJEMPLO DE EXTEND
+
+#indexMainSection03 {
+  @extend #indexMainSection02;
+  margin: $mAuto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  @include display(flex, column, center, center);
+  list-style: none;
+  a {
+    margin: 0 1rem;
+  }
+  i {
+    font-size: 3rem;
+    color: $colorOne;
+  }
+  i:hover {
+    font-size: 3rem;
+    color: $colorThree;
+  }
+}
+
+#indexMainSection04 {
+  @include display(flex, row, space-between, center);
+
+  #indexMainSection04Div {
+    padding: 1rem;
+    margin: $mAuto;
+    #indexMainSection04Div01 {
+      h5 {
+        font-weight: bold;
+      }
+      @include media-mxw576(sm) {
+        margin-bottom: 1rem;
+      }
+      @include media-mxw576(md) {
+        margin-bottom: 1rem;
+      }
+      @include media-mxw576(lg) {
+        margin-bottom: 1rem;
+      }
+    }
+    #indexMainSection04Div02 {
+      h5 {
+        font-weight: bold;
+      }
+      @include media-mxw576(sm) {
+        margin-bottom: 1rem;
+      }
+    }
+    #indexMainSection04Div03 {
+      h5 {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#indexMainSection05 {
+  text-align: center;
+  margin-bottom: 1rem;
+  #colorButton02 {
+    background-color: $colorTwo;
+    border: 1px solid $colorTwo;
+    color: $colorThree;
+  }
+  #colorButton02:hover {
+    background-color: $colorTwo;
+    border: 1px solid $colorTwo;
+    color: $colorOne;
+  }
+}
+
+// productos.html
+
+#productosMain {
+  @include display(flex, column, space-between, center);
+  margin-bottom: 1rem;
+  h1 {
+    font-size: 2rem;
+    color: $colorTwo;
+    font-family: "Dela Gothic One", cursive;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  h5 {
+    font-size: 2rem;
+    color: $colorTwo;
+    font-weight: bold;
+    margin: 1rem;
+    font-family: "Dela Gothic One", cursive;
+  }
+  .productosMainSection01 {
+    #colorButton03 {
+      background-color: $colorThree;
+      border: 1px solid $colorOne;
+      color: $colorOne;
+      font-weight: bold;
+    }
+    #colorButton03:hover {
+      background-color: $colorThree;
+      border: 1px solid $colorThree;
+      color: $colorTwo;
+    }
+    .productosMainSection01Article01 {
+      img:hover {
+        transform: scale(1.1);
+        transition: 650ms;
+      }
+      h5 {
+        font-size: 1.8rem;
+      }
+      .productosMainSection01Article01Div {
+        @include media-mxw576(sm) {
+          margin-bottom: 1rem;
+        }
+        @include media-mxw576(md) {
+          margin-bottom: 1rem;
+        }
+        @include media-mxw576(lg) {
+          margin-bottom: 1rem;
+        }
+        @include media-mxw576(xl) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .productosMainSection01Article02 {
+      @include media-mxw576(sm) {
+        margin-bottom: 1rem;
+      }
+    }
+    .productosMainSection01Article03 {
+      @include media-mxw576(sm) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.productosMainSection02 {
+  margin-top: 1rem;
+}
+
+// recetas.html
+#recetasMain {
+  margin-top: 1rem;
+  #recetasMainSection01 {
+    background-color: #96806e;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @include media-mxw576(sm) {
+      padding: 0.4rem 1rem;
+    }
+    @include media-mxw576(md) {
+      padding: 0.4rem 1rem;
+    }
+    @include media-mxw576(lg) {
+      padding: 0.4rem 1rem;
+    }
+    @include media-mxw576(xl) {
+      padding: 0.4rem 1rem;
+    }
+    @include media-mxw576(xxl) {
+      padding: 0.4rem 1rem;
+    }
+    @include media-mxw576(xxxl) {
+      padding: 0.4rem 1rem;
+    }
+    h1 {
+      font-family: "Dela Gothic One", cursive;
+      color: $colorTwo;
+      text-decoration: underline;
+    }
+    h2 {
+      color: $colorTwo;
+      font-style: italic;
+      font-size: 1.6rem;
+      margin-bottom: 0.6rem;
+    }
+    h4 {
+      margin-top: 0.4rem;
+      color: $colorTwo;
+      font-style: italic;
+      font-size: 1.6rem;
+    }
+    h5 {
+      color: $colorTwo;
+      font-style: italic;
+      font-size: 1.6rem;
+    }
+    p {
+      color: $colorTwo;
+    }
+    li {
+      color: $colorTwo;
+    }
+  }
+}
+
+// nosotros.html
+#nosotrosMain {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  h1 {
+    color: $colorTwo;
+    font-family: "Dela Gothic One", cursive;
+  }
+}
+.nosotrosMainSectionTwo {
+  @include media-mxw576(sm) {
+    display: none;
+  }
+  @include media-mxw576(md) {
+    display: none;
+  }
+  @include media-mxw576(lg) {
+    display: none;
+  }
+
+  h6 {
+    font-size: 2.4rem;
+    font-family: "Dela Gothic One", cursive;
+    color: $colorTwo;
+  }
+}
+.nosotrosMainSectionThree {
+  margin-top: 1rem;
+  @include media-mxwMinWidth(lg) {
+    display: none;
+  }
+  @include media-mxwMinWidth(xl) {
+    display: none;
+  }
+  @include media-mxwMinWidth(xxl) {
+    display: none;
+  }
+  @include media-mxwMinWidth(xxxl) {
+    display: none;
+  }
+  h6 {
+    font-size: 2.4rem;
+    font-family: "Dela Gothic One", cursive;
+    color: $colorTwo;
+  }
+}
+
+// contacto.html
+#contactoMain {
+  width: 80vw;
+  height: 90vh;
+  @include display(flex, column, center, center);
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-image: url(../images/bgContact.jpg);
+  background-position: center;
+  border: 2px solid $colorTwo;
+  #contactoMainSection {
+    width: 40vw;
+    margin: 0 auto;
+    color: $colorOne;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2.4rem;
+      font-family: "Dela Gothic One", cursive;
+    }
+    @include media-mxw576(sm) {
+      width: 90%;
+    }
+    @include media-mxw576(md) {
+      width: 85%;
+    }
+    @include media-mxw576(lg) {
+      width: 75%;
+    }
+    @include media-mxw576(xl) {
+      width: 65%;
+    }
+  }
+}
+#colorButton04 {
+  background-color: $colorTwo;
+  border: 1px solid $colorThree;
+  color: $colorThree;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#colorButton04:hover {
+  background-color: $colorTwo;
+  border: 1px solid $colorTwo;
+  color: $colorOne;
+}

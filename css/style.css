@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #7b6755; }
+
+.menuBeerco {
+  color: white; }
+
+.indexFooter {
+  background-color: black;
+  color: #7b6755;
+  padding: 1rem; }
+  .indexFooter div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .indexFooter div h5 {
+      font-family: "Dela Gothic One", cursive; }
+  .indexFooter a {
+    color: #7b6755;
+    font-style: italic; }
+  .indexFooter a:hover {
+    color: white;
+    font-style: italic; }
+
+#indexNav {
+  background-color: black; }
+  #indexNav a {
+    color: white; }
+  #indexNav a:hover {
+    color: #7b6755; }
+
+#indexMainSection02, #indexMainSection03 {
+  background-color: black;
+  color: white;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center; }
+  #indexMainSection02 h1, #indexMainSection03 h1 {
+    color: #7b6755;
+    font-family: "Dela Gothic One", cursive; }
+  @media screen and (max-width: 576px) {
+    #indexMainSection02, #indexMainSection03 {
+      width: 90%;
+      margin: 0 auto; } }
+  @media screen and (max-width: 768px) {
+    #indexMainSection02, #indexMainSection03 {
+      width: 90%;
+      margin: 0 auto; } }
+  @media screen and (max-width: 992px) {
+    #indexMainSection02, #indexMainSection03 {
+      width: 90%;
+      margin: 0 auto; } }
+  @media screen and (max-width: 1200px) {
+    #indexMainSection02, #indexMainSection03 {
+      width: 90%;
+      margin: 0 auto; } }
+
+#indexMainSection03 {
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none; }
+  #indexMainSection03 h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem; }
+  #indexMainSection03 a {
+    margin: 0 1rem; }
+  #indexMainSection03 i {
+    font-size: 3rem;
+    color: white; }
+  #indexMainSection03 i:hover {
+    font-size: 3rem;
+    color: #7b6755; }
+
+#indexMainSection04 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  #indexMainSection04 #indexMainSection04Div {
+    padding: 1rem;
+    margin: 0 auto; }
+    #indexMainSection04 #indexMainSection04Div #indexMainSection04Div01 h5 {
+      font-weight: bold; }
+    @media screen and (max-width: 576px) {
+      #indexMainSection04 #indexMainSection04Div #indexMainSection04Div01 {
+        margin-bottom: 1rem; } }
+    @media screen and (max-width: 768px) {
+      #indexMainSection04 #indexMainSection04Div #indexMainSection04Div01 {
+        margin-bottom: 1rem; } }
+    @media screen and (max-width: 992px) {
+      #indexMainSection04 #indexMainSection04Div #indexMainSection04Div01 {
+        margin-bottom: 1rem; } }
+    #indexMainSection04 #indexMainSection04Div #indexMainSection04Div02 h5 {
+      font-weight: bold; }
+    @media screen and (max-width: 576px) {
+      #indexMainSection04 #indexMainSection04Div #indexMainSection04Div02 {
+        margin-bottom: 1rem; } }
+    #indexMainSection04 #indexMainSection04Div #indexMainSection04Div03 h5 {
+      font-weight: bold; }
+
+#indexMainSection05 {
+  text-align: center;
+  margin-bottom: 1rem; }
+  #indexMainSection05 #colorButton02 {
+    background-color: black;
+    border: 1px solid black;
+    color: #7b6755; }
+  #indexMainSection05 #colorButton02:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: white; }
+
+#productosMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; }
+  #productosMain h1 {
+    font-size: 2rem;
+    color: black;
+    font-family: "Dela Gothic One", cursive;
+    font-weight: bold;
+    margin: 1rem; }
+  #productosMain h5 {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    margin: 1rem;
+    font-family: "Dela Gothic One", cursive; }
+  #productosMain .productosMainSection01 #colorButton03 {
+    background-color: #7b6755;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold; }
+  #productosMain .productosMainSection01 #colorButton03:hover {
+    background-color: #7b6755;
+    border: 1px solid #7b6755;
+    color: black; }
+  #productosMain .productosMainSection01 .productosMainSection01Article01 img:hover {
+    transform: scale(1.1);
+    transition: 650ms; }
+  #productosMain .productosMainSection01 .productosMainSection01Article01 h5 {
+    font-size: 1.8rem; }
+  @media screen and (max-width: 576px) {
+    #productosMain .productosMainSection01 .productosMainSection01Article01 .productosMainSection01Article01Div {
+      margin-bottom: 1rem; } }
+  @media screen and (max-width: 768px) {
+    #productosMain .productosMainSection01 .productosMainSection01Article01 .productosMainSection01Article01Div {
+      margin-bottom: 1rem; } }
+  @media screen and (max-width: 992px) {
+    #productosMain .productosMainSection01 .productosMainSection01Article01 .productosMainSection01Article01Div {
+      margin-bottom: 1rem; } }
+  @media screen and (max-width: 1200px) {
+    #productosMain .productosMainSection01 .productosMainSection01Article01 .productosMainSection01Article01Div {
+      margin-bottom: 1rem; } }
+  @media screen and (max-width: 576px) {
+    #productosMain .productosMainSection01 .productosMainSection01Article02 {
+      margin-bottom: 1rem; } }
+  @media screen and (max-width: 576px) {
+    #productosMain .productosMainSection01 .productosMainSection01Article03 {
+      margin-bottom: 1rem; } }
+
+.productosMainSection02 {
+  margin-top: 1rem; }
+
+#recetasMain {
+  margin-top: 1rem; }
+  #recetasMain #recetasMainSection01 {
+    background-color: #96806e;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    @media screen and (max-width: 576px) {
+      #recetasMain #recetasMainSection01 {
+        padding: 0.4rem 1rem; } }
+    @media screen and (max-width: 768px) {
+      #recetasMain #recetasMainSection01 {
+        padding: 0.4rem 1rem; } }
+    @media screen and (max-width: 992px) {
+      #recetasMain #recetasMainSection01 {
+        padding: 0.4rem 1rem; } }
+    @media screen and (max-width: 1200px) {
+      #recetasMain #recetasMainSection01 {
+        padding: 0.4rem 1rem; } }
+    @media screen and (max-width: 1400px) {
+      #recetasMain #recetasMainSection01 {
+        padding: 0.4rem 1rem; } }
+    @media screen and (max-width: 1920px) {
+      #recetasMain #recetasMainSection01 {
+        padding: 0.4rem 1rem; } }
+    #recetasMain #recetasMainSection01 h1 {
+      font-family: "Dela Gothic One", cursive;
+      color: black;
+      text-decoration: underline; }
+    #recetasMain #recetasMainSection01 h2 {
+      color: black;
+      font-style: italic;
+      font-size: 1.6rem;
+      margin-bottom: 0.6rem; }
+    #recetasMain #recetasMainSection01 h4 {
+      margin-top: 0.4rem;
+      color: black;
+      font-style: italic;
+      font-size: 1.6rem; }
+    #recetasMain #recetasMainSection01 h5 {
+      color: black;
+      font-style: italic;
+      font-size: 1.6rem; }
+    #recetasMain #recetasMainSection01 p {
+      color: black; }
+    #recetasMain #recetasMainSection01 li {
+      color: black; }
+
+#nosotrosMain {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem; }
+  #nosotrosMain h1 {
+    color: black;
+    font-family: "Dela Gothic One", cursive; }
+
+@media screen and (max-width: 576px) {
+  .nosotrosMainSectionTwo {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .nosotrosMainSectionTwo {
+    display: none; } }
+
+@media screen and (max-width: 992px) {
+  .nosotrosMainSectionTwo {
+    display: none; } }
+
+.nosotrosMainSectionTwo h6 {
+  font-size: 2.4rem;
+  font-family: "Dela Gothic One", cursive;
+  color: black; }
+
+.nosotrosMainSectionThree {
+  margin-top: 1rem; }
+  @media screen and (min-width: 992px) {
+    .nosotrosMainSectionThree {
+      display: none; } }
+  @media screen and (min-width: 1200px) {
+    .nosotrosMainSectionThree {
+      display: none; } }
+  @media screen and (min-width: 1400px) {
+    .nosotrosMainSectionThree {
+      display: none; } }
+  @media screen and (min-width: 1920px) {
+    .nosotrosMainSectionThree {
+      display: none; } }
+  .nosotrosMainSectionThree h6 {
+    font-size: 2.4rem;
+    font-family: "Dela Gothic One", cursive;
+    color: black; }
+
+#contactoMain {
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-image: url(../images/bgContact.jpg);
+  background-position: center;
+  border: 2px solid black; }
+  #contactoMain #contactoMainSection {
+    width: 40vw;
+    margin: 0 auto;
+    color: white; }
+    #contactoMain #contactoMainSection h1 {
+      font-size: 2rem;
+      margin-bottom: 2.4rem;
+      font-family: "Dela Gothic One", cursive; }
+    @media screen and (max-width: 576px) {
+      #contactoMain #contactoMainSection {
+        width: 90%; } }
+    @media screen and (max-width: 768px) {
+      #contactoMain #contactoMainSection {
+        width: 85%; } }
+    @media screen and (max-width: 992px) {
+      #contactoMain #contactoMainSection {
+        width: 75%; } }
+    @media screen and (max-width: 1200px) {
+      #contactoMain #contactoMainSection {
+        width: 65%; } }
+
+#colorButton04 {
+  background-color: black;
+  border: 1px solid #7b6755;
+  color: #7b6755;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+#colorButton04:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: white; }

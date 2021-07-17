@@ -1,0 +1,48 @@
+// VARIABLES
+
+// COLORS
+
+$colorOne: white; // Color white
+$colorTwo: black; // Color black
+$colorThree: #7b6755; // Color beige
+
+// ALIGN
+
+$tAlign: center;
+$mAuto: 0 auto;
+
+// MAPS
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1920px,
+);
+
+// MIXIN MEDIA QUERYS
+
+// MIN-WIDTH
+@mixin media-mxwMinWidth($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+// MAX-WIDTH
+@mixin media-mxw576($breakpoint) {
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+// MIXIN - DISPLAY
+
+@mixin display($display, $direction, $justify, $align) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
