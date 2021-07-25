@@ -7,5 +7,5 @@
 ## Lenguajes utilizados.
 
 ```bash
-HTML, CSS, BOOSTRAP, SASS y GIT.
+HTML, CSS, BOOSTRAP y SASS..
 ```
